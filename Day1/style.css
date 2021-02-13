@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #2c3e50;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 1.5px;
+  height: 50px;
+  width: 150px;
+  outline: none;
+  display: block;
+  color: #2c3e50;
+  font-size: 20px;
+  position: relative;
+  -webkit-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  background-color: #8e44ad;
+  border: 0;
+  border-radius: 1.5px;
+  height: 50px;
+  width: 150px;
+  outline: none;
+  display: block;
+  -webkit-transform: translate(5px, 0px) translateZ(-1em);
+          transform: translate(5px, 0px) translateZ(-1em);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+button:hover {
+  background: #8e44ad;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+button:hover::before {
+  background: #fff;
+  -webkit-transform: translate(-20px, -25px) translateZ(-1em);
+          transform: translate(-20px, -25px) translateZ(-1em);
+}
+/*# sourceMappingURL=style.css.map */
