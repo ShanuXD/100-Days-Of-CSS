@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@-webkit-keyframes anim-1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0px, 20px, 0px);
+            transform: translate3d(0px, 20px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 20px, 0) rotate(45deg);
+            transform: translate3d(0, 20px, 0) rotate(45deg);
+  }
+}
+@keyframes anim-1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0px, 20px, 0px);
+            transform: translate3d(0px, 20px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 20px, 0) rotate(45deg);
+            transform: translate3d(0, 20px, 0) rotate(45deg);
+  }
+}
+
+@-webkit-keyframes anim-2 {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes anim-2 {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes anim-3 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -20px, 0) rotate(135deg);
+            transform: translate3d(0, -20px, 0) rotate(135deg);
+  }
+}
+
+@keyframes anim-3 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -20px, 0) rotate(135deg);
+            transform: translate3d(0, -20px, 0) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes rev-anim-1 {
+  0% {
+    -webkit-transform: translate3d(0, 20px, 0) rotate(45deg);
+            transform: translate3d(0, 20px, 0) rotate(45deg);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rev-anim-1 {
+  0% {
+    -webkit-transform: translate3d(0, 20px, 0) rotate(45deg);
+            transform: translate3d(0, 20px, 0) rotate(45deg);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes rev-anim-2 {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes rev-anim-2 {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes rev-anim-3 {
+  0% {
+    -webkit-transform: translate3d(0, -20px, 0) rotate(135deg);
+            transform: translate3d(0, -20px, 0) rotate(135deg);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rev-anim-3 {
+  0% {
+    -webkit-transform: translate3d(0, -20px, 0) rotate(135deg);
+            transform: translate3d(0, -20px, 0) rotate(135deg);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #3FAF82;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.check-mark {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 100;
+}
+
+span {
+  display: block;
+  height: .8rem;
+  width: 8rem;
+  background: #fff;
+  margin: 1.2rem 0rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.check-mark:checked ~ .burger span:nth-child(1) {
+  -webkit-animation: anim-1 0.5s ease forwards;
+          animation: anim-1 0.5s ease forwards;
+}
+
+.check-mark:checked ~ .burger span:nth-child(2) {
+  -webkit-animation: anim-2 0.5s ease forwards;
+          animation: anim-2 0.5s ease forwards;
+}
+
+.check-mark:checked ~ .burger span:nth-child(3) {
+  -webkit-animation: anim-3 0.5s ease forwards;
+          animation: anim-3 0.5s ease forwards;
+}
+
+.check-mark:not(:checked) ~ .burger span:nth-child(1) {
+  -webkit-animation: rev-anim-1 0.5s ease;
+          animation: rev-anim-1 0.5s ease;
+}
+
+.check-mark:not(:checked) ~ .burger span:nth-child(2) {
+  -webkit-animation: rev-anim-2 0.5s ease;
+          animation: rev-anim-2 0.5s ease;
+}
+
+.check-mark:not(:checked) ~ .burger span:nth-child(3) {
+  -webkit-animation: rev-anim-3 0.5s ease;
+          animation: rev-anim-3 0.5s ease;
+}
+/*# sourceMappingURL=style.css.map */
