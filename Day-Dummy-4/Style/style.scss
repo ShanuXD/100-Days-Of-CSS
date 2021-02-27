@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Kumbh Sans, sans-serif;
+}
+body{
+    box-sizing: inherit;
+    
+}
+.hero{
+    position: relative;
+    height: 100vh;
+    background: #156eeb;
+    overflow: hidden;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text{
+    text-align: center;
+    z-index: 10;
+    text-transform: uppercase;
+    color: #0f4681;
+}
+h2{
+    color: #e2e7e6;
+    font-size: 8rem;
+    z-index: 10;
+    font-weight: 700;
+    padding: 2rem 1rem 0 1rem;
+    background: #0f4681;
+
+    
+}
+span{
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.block{
+    position: absolute;
+    height: 5rem;
+    width: 10rem;
+    background: #156eeb;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+
+}
